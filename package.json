@@ -5,13 +5,15 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "publish": "pnpm run build && npx changeset publish"
   },
   "dependencies": {
     "rollup": "^3.20.2",
     "rollup-cli": "^1.0.9"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.1",
     "@rollup/plugin-commonjs": "^24.0.1",
     "@rollup/plugin-node-resolve": "^15.0.1"
   },
